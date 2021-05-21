@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 .setDrawerLayout(drawer)
                 .build();
 
-        //Instanciate buttons
+        //Neue Instanzen für die Button erzeugen
         buttonTabelle  = (Button) findViewById(R.id.btn_tabelle);
         buttonSpieltag  = (Button) findViewById(R.id.btn_ergebnisse);
         buttonQuiz  = (Button) findViewById(R.id.btn_quiz);
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         buttonSpieltag.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, SpielTagActivity.class); // intent instanciation
+                Intent i = new Intent(MainActivity.this, SpielTagActivity.class); // Onclick listener für die Spieltag View
                 startActivity(i);
             }
         });

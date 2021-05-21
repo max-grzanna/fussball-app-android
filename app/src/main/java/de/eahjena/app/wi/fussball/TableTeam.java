@@ -1,7 +1,7 @@
 package de.eahjena.app.wi.fussball;
 
 public class TableTeam {
-    //Les attributes
+    //Erstellung der Attribute
     int place;
     int teamInfoId;
     String teamName;

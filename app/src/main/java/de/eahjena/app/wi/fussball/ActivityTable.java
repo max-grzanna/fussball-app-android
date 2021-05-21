@@ -20,7 +20,7 @@ import java.util.HashMap;
 
 public class ActivityTable extends AppCompatActivity {
 
-    //hier link einfügen
+    //https://bezkoder.com/java-android-read-json-file-assets-gson/
     public String loadJSONFromAsset() {
         String json = null;
         try {
@@ -45,30 +45,31 @@ public class ActivityTable extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        //Initialize the RecyclerView
+        //Initialisiert the RecyclerView
+        //In Android, RecyclerView provides an ability to implement the horizontal, vertical and Expandable List. It is mainly used when we have data collections whose elements can change at run time based on user action or any network events. For using this widget we have to specify the Adapter and Layout Manager.
         ArrayList<TableTeam> tableTeamList = new ArrayList<TableTeam>();
 
         //get data from json file if no success, output error to log
         try {
-            JSONObject obj = new JSONObject(  loadJSONFromAsset() );
-            JSONArray array = obj.getJSONArray("tabelle");
+            JSONObject object = new JSONObject(loadJSONFromAsset());
+            JSONArray array = object.getJSONArray("tabelle");
 
             for (int i = 0; i < array.length(); i++) {
-                JSONObject jo_inside = array.getJSONObject(i);
+                JSONObject jsonObject = array.getJSONObject(i);
 
-                //use optgetInt
-                int teamid = jo_inside.getInt("id");
-                String teamname = jo_inside.getString("name");
-                int teamtore = jo_inside.getInt("tore");
-                int teampunkte = jo_inside.getInt("punkte");
-                int teammatches = jo_inside.getInt("spiele");
-                String teamlogo = jo_inside.getString("logo");
 
-                TableTeam team = new TableTeam(teamid,  teamname, teamtore, teampunkte, teammatches, teamlogo);
+                int teamid = jsonObject.getInt("id");
+                String teamname = jsonObject.getString("name");
+                int teamtore = jsonObject.getInt("tore");
+                int teampunkte = jsonObject.getInt("punkte");
+                int teammatches = jsonObject.getInt("spiele");
+                String teamlogo = jsonObject.getString("logo");
+
+                TableTeam team = new TableTeam(teamid, teamname, teamtore, teampunkte, teammatches, teamlogo);
                 tableTeamList.add(team);
             }
         } catch (JSONException e) {
-            Log.e("JS error",e.getMessage());
+            Log.e("JS error", e.getMessage());
         }
 
         //set up the RecyclerView
