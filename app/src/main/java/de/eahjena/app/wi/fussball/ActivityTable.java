@@ -77,7 +77,7 @@ public class ActivityTable extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         TableAdapter adapter = new TableAdapter(this, tableTeamList);
-        //bind adapter to view
+        //verbindung der recycler view mit dem adapter
         recyclerView.setAdapter(adapter);
     }
 
