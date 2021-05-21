@@ -1,0 +1,23 @@
+
+{
+  "tabelle":[
+      {"id":"40","name":"Bayern München","logo":"images/teamicons/Bayern_Muenchen.png","tore":"94","punkte":"90","spiele":"34"},
+      {"id":"7","name":"Borussia Dortmund","logo":"images/teamicons/Borussia_Dortmund.png","tore":"80","punkte":"71","spiele":"34"},
+      {"id":"9","name":"FC Schalke 04","logo":"images/teamicons/FC_Schalke_04.png","tore":"63","punkte":"64","spiele":"34"},
+      {"id":"6","name":"Bayer 04 Leverkusen","logo":"images/teamicons/Bayer_Leverkusen.png","tore":"60","punkte":"61","spiele":"34"},
+      {"id":"131","name":"VfL Wolfsburg","logo":"images/teamicons/VfL_Wolfsburg.png","tore":"63","punkte":"60","spiele":"34"},
+      {"id":"87","name":"Borussia Mönchengladbach","logo":"images/teamicons/Bor_Moenchengladbach.png","tore":"59","punkte":"55","spiele":"34"},
+      {"id":"81","name":"1. FSV Mainz 05","logo":"images/teamicons/a_1_fsv_mainz_05.png","tore":"52","punkte":"53","spiele":"34"},
+      {"id":"95","name":"FC Augsburg","logo":"images/teamicons/FC_Augsburg.png","tore":"47","punkte":"52","spiele":"34"},
+      {"id":"123","name":"TSG 1899 Hoffenheim","logo":"images/teamicons/TSG_Hoffenheim.png","tore":"72","punkte":"44","spiele":"34"},
+      {"id":"55","name":"Hannover 96","logo":"images/teamicons/Hannover_96.png","tore":"46","punkte":"42","spiele":"34"},
+      {"id":"54","name":"Hertha BSC","logo":"images/teamicons/Hertha_BSC.png","tore":"40","punkte":"41","spiele":"34"},
+      {"id":"134","name":"Werder Bremen","logo":"images/teamicons/werder_bremen.png","tore":"42","punkte":"39","spiele":"34"},
+      {"id":"112","name":"SC Freiburg","logo":"images/teamicons/SC_Freiburg.png","tore":"43","punkte":"36","spiele":"34"},
+      {"id":"91","name":"Eintracht Frankfurt","logo":"images/teamicons/Eintracht_Frankfurt.png","tore":"40","punkte":"36","spiele":"34"},
+      {"id":"16","name":"VfB Stuttgart","logo":"images/teamicons/VfB_Stuttgart.png","tore":"49","punkte":"32","spiele":"34"},
+      {"id":"100","name":"Hamburger SV","logo":"images/teamicons/Hamburger_SV.png","tore":"51","punkte":"27","spiele":"34"},
+      {"id":"79","name":"1. FC Nürnberg","logo":"images/teamicons/a_1_fc_nuernberg.png","tore":"37","punkte":"26","spiele":"34"},
+      {"id":"74","name":"Eintracht Braunschweig","logo":"images/teamicons/Eintracht_Braunschweig.png","tore":"29","punkte":"25","spiele":"34"}
+  ]
+}
